@@ -1,0 +1,61 @@
+I-front-end
+
+
+1-Création d'un Composant de connexion Login() {
+    -email
+    -mot de passe
+};
+
+2- Composant de création de compte Register() {
+    -nom de restau
+    -email
+    -localisation
+    -Contact
+    -mot de passe
+}
+
+3-Navbar coté client Navbar() {
+    -Accueil {
+        barre de recherche
+    }
+    -Commande {
+        nom de restau
+        num de table
+        choix de menu
+    }
+}
+
+Dashboard
+
+NavBar {
+    -Accueil
+    -Commandes
+    -Gestionnaire de pages
+}
+
+Accueil {
+    Présentation générale
+}
+
+Commandes {
+
+    -listes des commandes
+    - Point journalier
+}
+
+Commande {
+    - En cours de traitement
+    - prêt
+    - livré
+}
+
+
+II-back-end
+
+Post('/register') {
+
+}
+
+Post('/login')
+
+Post

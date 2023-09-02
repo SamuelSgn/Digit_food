@@ -1,0 +1,30 @@
+restaurant  {
+    -attribué un id à chaque resto;
+    -name of the restaurant;
+    -email;
+    -localisation of the restaurant;
+    -Contact;
+    -password
+}
+
+Commandes {
+    -id du restaurant;
+    -id de la commmande;
+    -heure de ma commande;
+    -statut de la commande
+}-
+
+Menus {
+    -attruibué un id à chaque mets du menu;
+    -string: images, on va stocker les url des images du menu du restaurant;
+    -attribué un id au prix des mets du restaurants;
+    -string: description du menu et de son contenu
+}
+
+Comments/Reactions {
+    -string: avis des clients
+}
+
+ADministrateur {
+    -gestion des droits d'accès utilisateurs et administrateurs sur la plateforme';
+}

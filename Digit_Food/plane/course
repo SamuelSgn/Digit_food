@@ -1,0 +1,8 @@
+1-Base de donnée
+    -Etablir les Tables
+    - Le Mécanisme de manipulation de donnée
+
+2- Créer un composant React <Navbar/> côté client
+3- Composant <Register/> <Login/> avec les middlewares front-end
+4- Routes('/Register')
+5- Routes('/login') génération de token avec middlewares
