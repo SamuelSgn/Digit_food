@@ -17,7 +17,7 @@ Roads.post('/register', checkEmailExists, function (req, res) {
     var name_of_the_restaurant = req.body.name_of_the_restaurant;
     var email = req.body.email;
     var localisation = req.body.localisation;
-    var contact = req.body.contact;
+    var contact = req.body.contacts;
     var password = req.body.password;
 
     let salt = bcrypt.genSaltSync(10);  
