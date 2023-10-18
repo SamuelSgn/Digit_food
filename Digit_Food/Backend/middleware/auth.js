@@ -37,7 +37,7 @@ function checkPassword(req, res, next){
     if (words){
         next();
     } else {
-        res.status(400).send("Invalid password or email");
+        res.status(400).send("Invalid password or contact");
     }
 }
 
@@ -57,25 +57,28 @@ function checkEmailExists(req, res, next){
 }
 
 function LoginUser(req, res, next){
-    const query_mail = `SELECT * FROM restaurant WHERE email = '${req.body.email}'`;
-    connection.query(query_mail, [req.body.email], (err, results) => {
+    const query_contact = `SELECT * FROM restaurant WHERE contact = '${req.body.contact}'`;
+    connection.query(query_contact, (err, results) => {
         if (err){
             res.send(err);
         } else {
             if (results.length > 0) {
-                encrypt.compare(req.body.password, results[0].password, (err, same) => {
-                    if (err){
-                        console.error(err);
+                encrypt.compare(req.body.password, results[0].password, (error, same) => {
+                    if (error){
+                        console.error(error);
                     } else {
                         if (same){
                             req.id = results[0].id;
-                            req.email = results[0].email;
+                            req.contact = results[0].contact;
                             next();
                         } else {
+                            // console.log(error);
                             res.send("Incorrect password");
                         }
                     }
                 });
+            } else {
+                res.send("Incorrect contact");
             }
         }
     });
@@ -86,10 +89,11 @@ function authToken(req, res, next){
         const token = req.headers.authorization.split(' ')[1];
         const response = jwt.verify(token, process.env.SECRET_KEY);
         req.id = response.id;
+        req.contact = response.contact;
         req.email = response.email;
         next();
     } catch {
-        res.status(401).json({message: "Invalid token authorization"});
+        res.send("error");
     }
 }
 
