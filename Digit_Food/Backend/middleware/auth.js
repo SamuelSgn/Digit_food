@@ -93,7 +93,8 @@ function authToken(req, res, next){
         req.email = response.email;
         next();
     } catch {
-        res.send("error");
+        // console.log(response);
+        res.status(500).send("error");
     }
 }
 
