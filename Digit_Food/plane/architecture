@@ -1,0 +1,66 @@
+Page d'accueil {
+    _Home;
+    _Login/Register;
+    _Contacts;
+    _About
+}
+
+Register {
+    _Nom du restaurant;
+    _adresse email;
+    _Localisation;
+    _Horaires d'ouvertures;
+    _Contacts;
+    _password
+}
+
+Login {
+    _adresse email;
+    _password
+}
+
+Contacts {
+    _Contactez-nous;
+    _email;
+    _votre requête;
+    _submit request
+}
+
+About {
+    _Description des Services: Digitalisation de la réception des commandes, traitement des commandes, point des ventes, etc.
+}
+
+Dashboard du promoteur de restaurant une fois connecté {
+    _Nom du restaurant;
+    _Localisation du restaurant;
+    _Contact du restaurant;
+    _Horaires d'ouvertures;
+    _Menu avec les options créer son menu et modifier son menu;
+    _Point des ventes: peut se faire par protéines;
+    _Liste des commandes par jour;
+    NB: les quatres premiers points seront liés à la page d'accueil du restaurant.
+}
+
+Dashboard côté client {
+    _page d'accueil du restaurant sélectionné + menu;
+    _Option de lancer une commande: le client aura cliquer sur les plats du menu qu'ils souhaitent avoir;
+    _Option modifier sa commande;
+    _Option de valider sa commande;
+    _Option de payer sa commande après avoir lancer sa commande: deux modes de paiement soit par cash soit sur la plateforme,
+    _barre de recherches dans le menu
+}
+
+Sauvegarde {
+    _sauvegarde réseau locale;
+    _sauvegarde cloud
+}
+
+Gestion des utilisateurs {
+    _administrateur principal: possède tous les droits,
+    _administrateurs secondaires: possède certains droits tels que la gestion de la base de données, la création des comptes utilisateurs ou encore des avis des ClientRequest,
+    _modérateurs: ce sont ceux qui auront quelques droits sur le compte du restaurant comme la réception des commandes en cuisine et leur validation.
+}
+
+Dashboard administrateur principal {
+    _
+}

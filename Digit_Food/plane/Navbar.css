@@ -1,0 +1,55 @@
+/* Réinitialisation des marges et des rembourrages pour le corps de la page */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles pour la barre de navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent; /* Barre de navigation transparente */
+    padding: 10px 20px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1); /* Ombre légère sous la barre de navigation */
+}
+
+/* Styles pour la section de gauche */
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+/* Styles pour le logo */
+.logo img {
+    width: 50px; /* Largeur du logo */
+    height: auto; /* Hauteur automatique pour conserver les proportions */
+    margin-right: 170px; /* Espacement entre le logo et les liens */
+}
+
+/* Styles pour les liens de navigation */
+.nav-links a {
+    text-decoration: none;
+    color: #333; /* Couleur des liens */
+    margin-right: 20px; /* Espacement entre les liens */
+    font-weight: bold; /* Texte en gras */
+}
+
+/* Styles pour la section de droite (liens de navigation) */
+.right-section {
+    display: flex;
+}
+
+/* Styles pour les liens de navigation de la section de droite */
+.right-section a {
+    text-decoration: none;
+    color: #333; /* Couleur des liens */
+    margin-right: 20px; /* Espacement entre les liens */
+    font-weight: bold; /* Texte en gras */
+}
+
+/* Style pour les liens au survol (changement de couleur) */
+.nav-links a:hover,
+.right-section a:hover {
+    color: #FF4500; /* Couleur au survol */
+}
